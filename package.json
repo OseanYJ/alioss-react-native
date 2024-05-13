@@ -1,6 +1,6 @@
 {
   "name": "alioss-react-native",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "aliyun oss for react native",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -36,7 +36,12 @@
     "ios",
     "android"
   ],
-  "author": "Osean <oseanyj@gmail.com>",
+  "repository": "https://github.com/OseanYJ/alioss-react-native.git",
+  "bugs": {
+    "url": "https://github.com/OseanYJ/alioss-react-native.git/issues"
+  },
+  "homepage": "https://github.com/OseanYJ/alioss-react-native.git#readme",
+  "author": "Osean <oseanyj@gmail.com> (https://github.com/OseanYJ/alioss-react-native.git)",
   "license": "MIT",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"

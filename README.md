@@ -1,6 +1,6 @@
 # alioss-react-native
 
-AliYun oss for react native，支持 Android + iOS，是[aliyun-oss-react-native](https://github.com/aliyun/aliyun-oss-react-native)提的问题修复版本
+AliYun oss for react native，支持 Android + iOS，是[aliyun-oss-react-native](https://github.com/aliyun/aliyun-oss-react-native)的问题修复版本
 
 ## Environment
 
@@ -37,7 +37,7 @@ yarn add alioss-react-native
   pod install
 ```
 
-### Android 
+### Android
 do nothing (The Gradle will automatically import alioss-react-native )
 
 ## API
@@ -68,13 +68,13 @@ doesObjectExist |Y|Y
 asyncDeleteObject  |Y|Y
 ## Usage
 
-```typescript 
+```typescript
 import { AliyunOSS } from "alioss-react-native";
 ```
 
 ---
 
-### Main type 
+### Main type
 
 
 #### OSSinit
@@ -87,7 +87,7 @@ declare type OSSinit = {
 ```
 
 #### OssListOptions
-```typescript 
+```typescript
 
 declare type OssListOptions = {
     prefix: string;
@@ -98,7 +98,7 @@ declare type OssListOptions = {
 
 ```
 #### AppendType
-```typescript 
+```typescript
 declare type AppendType = {
     appendPosition: number;
     contentType: string;
@@ -109,7 +109,7 @@ declare type AppendType = {
 ```
 ### enableDevMode
 
-```typescript 
+```typescript
   AliyunOSS.enableDevMode();
 ```
 
@@ -118,7 +118,7 @@ declare type AppendType = {
 
 init auth client with accessKeyId and accessKeySecret,please refer to the code.you can use ,but we do not suggest use it。
 
-```typescript 
+```typescript
 
 const endPoint = "https://xxx"
 const configuration = {
@@ -232,10 +232,10 @@ parameters:
 
 - name {String} bucket name
 - options {Object}
-  - [delimiter] {String} 
+  - [delimiter] {String}
   - [prefix] {String} search buckets using `prefix` key
   - [marker] {String} search start from `marker`, including `marker` key
-  - [maxKeys] {String|Number} max buckets, default is `100`, limit to `1000` 
+  - [maxKeys] {String|Number} max buckets, default is `100`, limit to `1000`
 ```typescript
  AliyunOSS.asyncListObjects(bucketName: string, options?: OssListOptions | undefined): Promise<any>;
 ```
